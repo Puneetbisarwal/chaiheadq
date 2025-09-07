@@ -8,4 +8,12 @@ Chai aur tweet
 
 <h1 class="text-center mt-4">Welcome to Chai's Django Project.</h1>
 
+<h2> 
+    {%if form.instance.pk %} 
+    Edit Tweet 
+    {% else %} 
+    Create Tweet 
+    {% endif %}
+</h2>
+
 {% endblock %}
